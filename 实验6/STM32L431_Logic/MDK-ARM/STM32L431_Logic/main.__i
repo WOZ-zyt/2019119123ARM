@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_STM32L431_Logic
+-IF:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+-IF:\Keil_v5\Arm\Packs\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L431xx
+-o stm32l431_logic\main.o --depend stm32l431_logic\main.d "../Core/Src/main.c"
